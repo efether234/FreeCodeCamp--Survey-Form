@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(255,255,0,.7), rgba(255,255,0,.7)), url('img/bg-los-angeles.jpg');
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+main {
+    background: linear-gradient(to bottom, rgba(255,255,255,.8), rgba(255,255,255,.8));
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    margin: 5rem auto 5rem auto;
+    max-width: 70rem;
+    padding: 7.5rem;
+}
+
+.main-heading {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+/* ******************************
+ *
+ * Form Styles
+ *
+ * ****************************** */
+
+form {
+    margin-top: 3rem;
+}
+
+.form-group {
+    display: flex;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.label {
+    flex: 0 0 50%;
+    font-weight: 400;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+/* radio group will be styled differently
+because group of radio buttons needs to use
+width of entire form */
+.radio-group-label {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.radio-pairs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.radio-pair {
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.radio-label {
+    flex: 0 0 5rem;
+    text-align: center;
+}
+
+/* Styles label to indicate required field */
+.required::before {
+    color: #f00;
+    content: "*";
+    margin-right: .5rem;
+}
+
+.input {
+    flex: 0 0 50%;
+}
+
+.choices {
+    list-style: none;
+}
+
+.button {
+    background-color: #ff0;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem 1rem .2rem rgba(0,0,0,.1);
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .2em;
+    margin: 5rem auto 0 auto;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+footer {
+    margin: 0 auto 0 auto;
+    max-width: 70rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
